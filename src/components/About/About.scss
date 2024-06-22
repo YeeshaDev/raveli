@@ -1,0 +1,112 @@
+@import "../../variables";
+@import '../../breakpoint';
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+    gap: 6rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    @include sm{
+        flex-direction: column-reverse;
+    }
+    .about-images{
+        position: relative;
+    
+        .raveli{
+            position: absolute;
+            top: -50px;
+            left:-3rem;
+        }
+        .man-hero{
+            width: 500px;
+            height: 700px;
+            object-fit: cover;
+            border: 1px solid black;
+            border-radius: 1rem;
+        }
+        .phone{
+            position: absolute;
+            bottom: -2rem;
+            right: -3rem;
+        }
+    }
+
+    .about-cards{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 1.7rem 1.3rem;
+margin-top: 2.5rem;
+.card1,.card2{
+    background-color:$secondary;
+    padding: 1.2rem 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: $shadow;
+   
+
+    span{
+        background-color: $primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+    }
+    p{
+        margin-top: 10px;
+        line-height: 2;
+    }
+}
+.card2{
+    background-color: $primary;
+    color: #fff;
+    span{
+        background-color: #fff;
+        color: $primary;
+    }
+}
+.card3{
+    background-color:$yellow;
+    padding: 1.2rem 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: $shadow;
+    width: 100%;
+    grid-column: span 2;
+
+    span{
+        background-color: $primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+    }
+    p{
+        margin-top: 10px;
+        line-height: 2;
+    }
+}
+    }
+
+    .about-details{
+       
+        
+        h2{
+            font-size: 2.5rem;
+            margin-bottom:1rem ;
+            font-weight: 600;
+        }
+
+
+    }
+}

@@ -1,0 +1,49 @@
+.slider-text{
+    margin-top: 2rem;
+    p{
+        margin-bottom: 2rem;
+    }
+
+    
+}
+
+.slider{
+    position: relative;
+    background-color: yellow;
+    z-index: 0;
+  
+}
+
+.slider-img{
+    background-color: antiquewhite;
+    position: relative;
+    
+   }
+   .slider:hover:focus::after{
+    background-color: transparent;
+   }
+
+   .slider:hover::after{
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   content: '';
+    background-color: rgba(0,0,0,0.1);
+    
+   }
+
+    .slider-handle{
+   
+    position: relative;
+    
+    z-index: -1;
+    
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+   }
